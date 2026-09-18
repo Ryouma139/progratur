@@ -1,6 +1,8 @@
-# progratur
+# progratur(本番用)
 
 C# / Java / Python の学習用プログラミングリファレンスサイト。文法・ランタイム・標準ライブラリを、具体的なコード例とともにまとめる。[Docusaurus](https://docusaurus.io/) 製。
+
+このリポジトリ（`Ryouma139/progratur`）は GitHub Pages による本番デプロイ用のソースリポジトリ。`main` ブランチへの push をトリガーに `.github/workflows/deploy.yml` が動き、`npm run build` の成果物（`build/`）を GitHub Pages にデプロイする。公開URLは [https://ryouma139.github.io/progratur/](https://ryouma139.github.io/progratur/) 。
 
 ## 構成
 
