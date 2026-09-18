@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.pythonSidebar.category.Python 文法": {
+    "message": "Python 文法",
+    "description": "The label for category 'Python 文法' in sidebar 'pythonSidebar'"
+  },
+  "sidebar.pythonSidebar.category.ランタイム": {
+    "message": "ランタイム",
+    "description": "The label for category 'ランタイム' in sidebar 'pythonSidebar'"
+  },
+  "sidebar.pythonSidebar.category.標準ライブラリ": {
+    "message": "標準ライブラリ",
+    "description": "The label for category '標準ライブラリ' in sidebar 'pythonSidebar'"
+  }
+}

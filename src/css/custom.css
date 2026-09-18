@@ -1,0 +1,125 @@
+/**
+ * Progratur theme — dark, purple-accented reference site.
+ */
+
+:root {
+  --ifm-color-primary: #7c5cff;
+  --ifm-color-primary-dark: #6440ff;
+  --ifm-color-primary-darker: #5732ff;
+  --ifm-color-primary-darkest: #3d0fff;
+  --ifm-color-primary-light: #9478ff;
+  --ifm-color-primary-lighter: #a186ff;
+  --ifm-color-primary-lightest: #c3b0ff;
+  --ifm-code-font-size: 90%;
+  --ifm-font-family-base: 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(124, 92, 255, 0.15);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #9478ff;
+  --ifm-color-primary-dark: #7c5cff;
+  --ifm-color-primary-darker: #6d49ff;
+  --ifm-color-primary-darkest: #4a1fff;
+  --ifm-color-primary-light: #ac9aff;
+  --ifm-color-primary-lighter: #b8a9ff;
+  --ifm-color-primary-lightest: #dcd2ff;
+  --ifm-background-color: #0b0b12;
+  --ifm-background-surface-color: #12121c;
+  --ifm-navbar-background-color: #0f0f18;
+  --ifm-footer-background-color: #0a0a10;
+  --ifm-toc-border-color: #24243a;
+  --ifm-color-emphasis-300: #2a2a40;
+  --docusaurus-highlighted-code-line-bg: rgba(148, 120, 255, 0.18);
+}
+
+[data-theme='dark'] .menu__link--active,
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(148, 120, 255, 0.16);
+}
+
+.badge--secondary {
+  --ifm-badge-background-color: var(--ifm-color-emphasis-300);
+}
+
+.markdown h1:first-child {
+  border-bottom: 2px solid var(--ifm-color-primary);
+  padding-bottom: 0.4rem;
+}
+
+[data-theme='dark'] .navbar {
+  box-shadow: 0 1px 0 0 #1f1f30;
+}
+
+/**
+ * 記事ページの「PDFとして保存」ボタン (ブラウザの印刷機能を利用)。
+ * 印刷時はナビゲーションやサイドバーなどの UI を隠し、本文だけを
+ * ダークモードでも読める配色で出力する。
+ */
+@media print {
+  /* ブラウザが付与する日付・URL・ページ番号などのヘッダー/フッターは
+   * サイト側の CSS からは無効化できない（印刷ダイアログの「ヘッダーと
+   * フッター」設定でのみ制御される）。ここでは重ならないよう十分な
+   * 余白だけ確保する。非表示にするには印刷ダイアログの詳細設定で
+   * 「ヘッダーとフッター」のチェックを外す必要がある。 */
+  @page {
+    margin: 20mm 15mm;
+  }
+
+  .navbar,
+  .theme-back-to-top-button,
+  footer.footer,
+  .pagination-nav,
+  .blog-post-pdf-button,
+  .theme-edit-this-page,
+  [class*='announcementBar_'],
+  [class*='backToTopButton_'],
+  html.blog-post-page .row > aside.col--3,
+  html.blog-post-page .row > .col--2 {
+    display: none !important;
+  }
+
+  html.blog-post-page .row > main {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  html.blog-post-page .container.margin-vert--lg {
+    margin: 0 !important;
+  }
+
+  html.blog-post-page,
+  html[data-theme='dark'].blog-post-page {
+    --ifm-background-color: #ffffff;
+    --ifm-background-surface-color: #ffffff;
+    --ifm-font-color-base: #1c1e21;
+    --ifm-heading-color: #1c1e21;
+    --ifm-toc-border-color: #dadde1;
+    --ifm-color-emphasis-300: #ebedf0;
+    background: #ffffff !important;
+    color: #1c1e21 !important;
+  }
+
+  html.blog-post-page pre[class*='language-'],
+  html.blog-post-page pre[class*='language-'] * {
+    background: #f6f8fa !important;
+  }
+
+  html.blog-post-page a {
+    color: #1c1e21 !important;
+    text-decoration: underline;
+  }
+
+  /* PDF にすると本文中のリンクはクリックできず参照先が分からなくなる
+   * ため、記事本文中の外部リンクだけ URL をテキストとして書き出す。 */
+  html.blog-post-page .markdown a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #555555;
+    word-break: break-all;
+  }
+
+  html.blog-post-page img {
+    max-width: 100% !important;
+  }
+}

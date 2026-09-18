@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Progratur",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Progratur Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.C#": {
+    "message": "C#",
+    "description": "Navbar item with label C#"
+  },
+  "item.label.Java": {
+    "message": "Java",
+    "description": "Navbar item with label Java"
+  },
+  "item.label.Python": {
+    "message": "Python",
+    "description": "Navbar item with label Python"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

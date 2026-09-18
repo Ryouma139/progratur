@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.javaSidebar.category.Java 文法": {
+    "message": "Java 文法",
+    "description": "The label for category 'Java 文法' in sidebar 'javaSidebar'"
+  },
+  "sidebar.javaSidebar.category.JVM ランタイム": {
+    "message": "JVM ランタイム",
+    "description": "The label for category 'JVM ランタイム' in sidebar 'javaSidebar'"
+  },
+  "sidebar.javaSidebar.category.標準ライブラリ": {
+    "message": "標準ライブラリ",
+    "description": "The label for category '標準ライブラリ' in sidebar 'javaSidebar'"
+  }
+}

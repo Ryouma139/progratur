@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.csharpSidebar.category.C# 文法": {
+    "message": "C# 文法",
+    "description": "The label for category 'C# 文法' in sidebar 'csharpSidebar'"
+  },
+  "sidebar.csharpSidebar.category..NET ランタイム": {
+    "message": ".NET ランタイム",
+    "description": "The label for category '.NET ランタイム' in sidebar 'csharpSidebar'"
+  },
+  "sidebar.csharpSidebar.category.標準ライブラリ": {
+    "message": "標準ライブラリ",
+    "description": "The label for category '標準ライブラリ' in sidebar 'csharpSidebar'"
+  }
+}

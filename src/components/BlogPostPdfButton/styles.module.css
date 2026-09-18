@@ -1,0 +1,24 @@
+.pdfButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: var(--ifm-button-border-radius, 0.3rem);
+  background: transparent;
+  color: var(--ifm-color-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.pdfButton:hover {
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-background, #fff);
+}
+
+.pdfIcon {
+  flex-shrink: 0;
+}
